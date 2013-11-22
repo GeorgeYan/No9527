@@ -13,6 +13,16 @@ describe "StaticPages" do
       visit '/static_pages/home'
       expect(page).to have_title('主页')
     end
+
+    it "should have the base title" do
+      visit '/static_pages/home'
+      expect(page).to have_title('No9527')
+    end
+
+    it "should have hte content title" do
+      visit '/static_pages/home'
+      expect(page).not_to have_title('|主页')
+    end
   end
 
   describe "Help page" do
