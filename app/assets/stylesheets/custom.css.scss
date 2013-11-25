@@ -1,0 +1,54 @@
+@import "bootstrap";
+
+html {
+  background: url(/assets/home_background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  padding-top: 20px;
+  font-size: 16px;
+  font-family: "Open Sans",serif;
+  background: transparent;
+}
+
+h1 {
+  font-family: "Abel", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+/* Override B3 .panel adding a subtly transparent background */
+.panel {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.margin-base-vertical {
+  margin: 40px 0;
+}
+
+.navbar-inverse {
+  border: 0 solid transparent;
+}
+
+.jumbotron {
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 16px 1px #909090;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  line-height: 1;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
