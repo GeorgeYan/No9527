@@ -1,7 +1,7 @@
 <% if @user.errors.any? %>
   <div id="erroe_explanation">
     <div class="alert alert-error">
-      The form contains <%= pluralize(@user.errors.count, "error") %>.
+      有 <%= @user.errors.count %> 处错误导致无法注册
     </div>
     <ul>
       <% @user.errors.full_messages.each do |msg| %>
