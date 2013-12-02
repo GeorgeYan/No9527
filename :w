@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       # Tell the UserMail to send a welcome Email after save
-      UserMailer.welcome_email(@user).deliver
+      UserMail.welcome_email(@user).deliver
 
       sign_in @user
       flash[:success] = "登录成功!"

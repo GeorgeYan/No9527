@@ -1,11 +1,4 @@
 zh-CN:
-  models:
-    user:
-      attributes:
-        name: 昵称
-        email: 邮箱
-        password: 密码
-        password_confirmation: 确认密码
   date:
     abbr_day_names:
     - 日

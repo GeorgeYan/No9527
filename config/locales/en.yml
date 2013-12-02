@@ -21,3 +21,9 @@
 
 en:
   hello: "Hello world"
+  activerecord:
+    models:
+      user: "Order"
+    attributes:
+      user:
+        name: "Business Name"
