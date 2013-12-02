@@ -1,3 +1,5 @@
+app_env_vars = File.join(Rails.root, 'config', 'initializers', 'app_env_vars.rb')
+load(app_env_vars) if File.exists?(app_env_vars)
 No9527::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -28,8 +30,8 @@ No9527::Application.configure do
   config.action_mailer.smtp_settings = {
     address:              'smtp.gmail.com',
     port:                 587,
-    user_name:            'testno9527@gmail.com',
-    password:             'test123456',
+    user_name:            ENV["EMAIL"],
+    password:             ENV["PASSWORD"],
     authentication:       'plain',
     enable_starttls_auto: true  }
   config.action_mailer.perform_deliveries = true
