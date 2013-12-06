@@ -10,7 +10,7 @@ set :deploy_via, :remote_cache
 set :use_sudo, false
 
 set :scm, "git"
-set :repository, "git@github.com:GeorgeYan/No9527.git"
+set :repository, "git@github.com:GeorgeYan/#{application}.git"
 set :branch, "master"
 
 default_run_options[:pty] = true
