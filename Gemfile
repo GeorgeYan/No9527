@@ -54,6 +54,6 @@ group :production do
   gem 'rails_12factor', '~> 0.0.2'
 end
 
-gem 'unicorn'
-gem 'rvm-capistrano'
-gem 'capistrano'
+gem 'unicorn', '~> 4.7.0'
+gem 'rvm-capistrano', '~> 1.5.1'
+gem 'capistrano', '~> 2.15.4'
