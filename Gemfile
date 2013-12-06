@@ -2,8 +2,8 @@ source 'https://rubygems.org/'
 
 gem 'rails', '4.0.1'
 
-gem 'sqlite3',       '~> 1.3.8'
 group :development, :test do
+  gem 'sqlite3',       '~> 1.3.8'
   gem 'rspec-rails',   '~> 2.14.0'
   gem 'guard-rspec',   '~> 4.0.4'
   gem 'guard-cucumber','~> 1.4.0'
@@ -12,8 +12,6 @@ group :development, :test do
   gem 'guard-spork',   '~> 1.5.1'
   gem 'childprocess',  '~> 0.3.9'
 
-  gem 'rvm-capistrano'
-  gem 'capistrano'
 end
 
 group :test do
@@ -55,3 +53,7 @@ group :production do
   gem 'pg', '~> 0.17.0'
   gem 'rails_12factor', '~> 0.0.2'
 end
+
+gem 'unicorn'
+gem 'rvm-capistrano'
+gem 'capistrano'
