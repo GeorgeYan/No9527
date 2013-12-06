@@ -8,6 +8,7 @@ set :user, "deployer"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
+set :ssh_options,{:forward_agent => true}
 
 set :scm, "git"
 set :repository, "git@github.com:GeorgeYan/#{application}.git"
