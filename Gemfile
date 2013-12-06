@@ -54,5 +54,5 @@ group :production do
 end
 
 gem 'unicorn', '~> 4.7.0'
-gem 'capistrano', '~> 3.0.1'
+gem 'capistrano', '~> 2.15.4'
 gem 'rvm-capistrano', '~> 1.5.1'
