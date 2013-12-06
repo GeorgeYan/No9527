@@ -25,3 +25,5 @@ doc/
 .secret
 # Ignore the mail username and password
 /config/initializers/app_env_vars.rb
+# Ignore the tags
+tags

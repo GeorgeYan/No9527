@@ -1,5 +1,6 @@
 app_env_vars = File.join(Rails.root, 'config', 'initializers', 'app_env_vars.rb')
 load(app_env_vars) if File.exists?(app_env_vars)
+
 No9527::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -38,4 +39,5 @@ No9527::Application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_options = { from: 'notest9527@gmail.com' }
 
+  config.action_mailer.default_url_options = { :host => "localhost:3000" }
 end

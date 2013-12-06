@@ -52,3 +52,7 @@ group :production do
   gem 'pg', '~> 0.17.0'
   gem 'rails_12factor', '~> 0.0.2'
 end
+
+gem 'unicorn', '~> 4.7.0'
+gem 'capistrano', '~> 3.0.1'
+gem 'rvm-capistrano', '~> 1.5.1'
