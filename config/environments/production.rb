@@ -80,5 +80,5 @@ No9527::Application.configure do
 
   # Force all access to the app over SSL, user Strict_Transport-Security,
   # and use secure cookies.
-  config.force_ssl = true
+  config.force_ssl = false
 end
